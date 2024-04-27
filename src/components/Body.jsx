@@ -60,7 +60,7 @@ const Body = ({ data, weekDays, month }) => {
       <div className="current text-center mt-2">
         <div className="temp text-7xl font-bold">{Math.round(main.temp - 273.15)}°C</div>
         <div className="weather text-4xl font-bold italic">{weather[0].main}</div>
-        <div className="hi-low text-3xl">{Math.round(main.temp_min - 273.15)}°C / {Math.round(main.temp_max - 273.15)}°C</div>
+        <div className="hi-low text-3xl">{Math.round(main.temp_min - 273.15)}°C <sub className="minmax">min</sub> / {Math.round(main.temp_max - 273.15)}°C <sub className="minmax">max</sub></div>
       </div>
     </main>
   );
